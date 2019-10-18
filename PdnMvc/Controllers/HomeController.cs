@@ -24,6 +24,12 @@
             return View();
         }
 
+        public IActionResult Counter()
+        {
+            Counter counter = new Counter();
+            return View(counter);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -4,16 +4,9 @@
 
     public class HelloWorldController : Controller
     {
-        // GET: /HelloWorld/
-        public string Index()
+        public IActionResult Index()
         {
-            return "Default 'Hello'.";
-        }
-
-        // GET: /HelloWorld/Welcome/ 
-        public string Welcome()
-        {
-            return "Hello and welcome!";
+            return View();
         }
     }
 }
